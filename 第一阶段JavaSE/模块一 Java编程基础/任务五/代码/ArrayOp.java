@@ -66,12 +66,21 @@ public class ArrayOp {
 		}
 		arr1[4] = 0;
 		for(int i = 0; i < arr1.length; i++) {
-			System.out.println("第" + i + "个元素的数值为：" + arr1[i]);
+			System.out.println("第" + (i + 1) + "个元素的数值为：" + arr1[i]);
 		}
 		System.out.println();
 		
-		
-		
+		System.out.println("---------------------------------------------");
+		//5.查找数组中是否有元素22，若有，则修改为220后打印全部元素
+		for(int i = 0; i < arr1.length; i++) {
+			if(22 == arr1[i]) {
+				arr1[i] = 220;
+			}
+		}
+		for(int i = 0; i < arr1.length; i++) {
+			System.out.println("第" + (i + 1) + "个元素的数值为：" + arr1[i]);
+		}
+		System.out.println();
 		
 		
 	 }
